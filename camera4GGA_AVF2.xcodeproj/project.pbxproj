@@ -7,14 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C02F79C3205E325000EFED78 /* close32x32.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C02F79C2205E325000EFED78 /* close32x32.jpeg */; };
+		C02F79C5205E325900EFED78 /* EffectIcon32x32.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C02F79C4205E325900EFED78 /* EffectIcon32x32.jpeg */; };
+		C02F79C7205E329C00EFED78 /* EffectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02F79C6205E329C00EFED78 /* EffectViewController.swift */; };
 		C06FC176205669E5000C5244 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06FC175205669E5000C5244 /* AppDelegate.swift */; };
 		C06FC178205669E5000C5244 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06FC177205669E5000C5244 /* ViewController.swift */; };
 		C06FC17B205669E5000C5244 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C06FC179205669E5000C5244 /* Main.storyboard */; };
 		C06FC17D205669E5000C5244 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C06FC17C205669E5000C5244 /* Assets.xcassets */; };
 		C06FC180205669E5000C5244 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C06FC17E205669E5000C5244 /* LaunchScreen.storyboard */; };
+		C06FC1882056C871000C5244 /* WhiteCameraIcon32x32.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C06FC1872056C871000C5244 /* WhiteCameraIcon32x32.jpg */; };
+		C06FC18A2057AB30000C5244 /* camera44x44wb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C06FC1892057AB30000C5244 /* camera44x44wb.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C02F79C2205E325000EFED78 /* close32x32.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = close32x32.jpeg; sourceTree = "<group>"; };
+		C02F79C4205E325900EFED78 /* EffectIcon32x32.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = EffectIcon32x32.jpeg; sourceTree = "<group>"; };
+		C02F79C6205E329C00EFED78 /* EffectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectViewController.swift; sourceTree = "<group>"; };
 		C06FC172205669E5000C5244 /* camera4GGA_AVF2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = camera4GGA_AVF2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C06FC175205669E5000C5244 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C06FC177205669E5000C5244 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +30,8 @@
 		C06FC17C205669E5000C5244 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C06FC17F205669E5000C5244 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C06FC181205669E5000C5244 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C06FC1872056C871000C5244 /* WhiteCameraIcon32x32.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhiteCameraIcon32x32.jpg; sourceTree = "<group>"; };
+		C06FC1892057AB30000C5244 /* camera44x44wb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = camera44x44wb.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +66,15 @@
 			children = (
 				C06FC175205669E5000C5244 /* AppDelegate.swift */,
 				C06FC177205669E5000C5244 /* ViewController.swift */,
+				C02F79C6205E329C00EFED78 /* EffectViewController.swift */,
 				C06FC179205669E5000C5244 /* Main.storyboard */,
 				C06FC17C205669E5000C5244 /* Assets.xcassets */,
 				C06FC17E205669E5000C5244 /* LaunchScreen.storyboard */,
 				C06FC181205669E5000C5244 /* Info.plist */,
+				C06FC1872056C871000C5244 /* WhiteCameraIcon32x32.jpg */,
+				C06FC1892057AB30000C5244 /* camera44x44wb.jpg */,
+				C02F79C4205E325900EFED78 /* EffectIcon32x32.jpeg */,
+				C02F79C2205E325000EFED78 /* close32x32.jpeg */,
 			);
 			path = camera4GGA_AVF2;
 			sourceTree = "<group>";
@@ -123,7 +138,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C02F79C5205E325900EFED78 /* EffectIcon32x32.jpeg in Resources */,
+				C06FC1882056C871000C5244 /* WhiteCameraIcon32x32.jpg in Resources */,
+				C02F79C3205E325000EFED78 /* close32x32.jpeg in Resources */,
 				C06FC180205669E5000C5244 /* LaunchScreen.storyboard in Resources */,
+				C06FC18A2057AB30000C5244 /* camera44x44wb.jpg in Resources */,
 				C06FC17D205669E5000C5244 /* Assets.xcassets in Resources */,
 				C06FC17B205669E5000C5244 /* Main.storyboard in Resources */,
 			);
@@ -138,6 +157,7 @@
 			files = (
 				C06FC178205669E5000C5244 /* ViewController.swift in Sources */,
 				C06FC176205669E5000C5244 /* AppDelegate.swift in Sources */,
+				C02F79C7205E329C00EFED78 /* EffectViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

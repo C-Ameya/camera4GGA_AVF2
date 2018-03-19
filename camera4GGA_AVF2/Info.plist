@@ -24,10 +24,18 @@
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
 	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>カメラを使用します</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>フォトライブラリーを使用します</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>フォトライブラリーに保存します</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
