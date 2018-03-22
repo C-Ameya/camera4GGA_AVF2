@@ -28,7 +28,6 @@ class ViewController: UIViewController, AVCapturePhotoCaptureDelegate {
     self.capturePhotoOutput?.capturePhoto(with: photoSettings, delegate: self)
   }
   
-  
   override func viewDidLoad() {
     super.viewDidLoad()
     
@@ -137,7 +136,7 @@ class ViewController: UIViewController, AVCapturePhotoCaptureDelegate {
     self.ssValue.text = String(format: "1/%.f", 1.0 / exposureDurationSeconds)
   }
 
-  //ホワイトバランスの処理
+  //ホワイトバランスの処理(1):Blue base
     @IBAction func WB(sender: UIButton){
       print("call WB")
       let wbSetting =  AVCaptureDevice.default(for: .video)
@@ -145,9 +144,9 @@ class ViewController: UIViewController, AVCapturePhotoCaptureDelegate {
         try wbSetting?.lockForConfiguration()
         var  g:AVCaptureDevice.WhiteBalanceGains = AVCaptureDevice.WhiteBalanceGains(redGain: 0.0, greenGain: 0.0, blueGain: 0.0)
         
-        g.blueGain = 1.0
-        g.greenGain = 1.0
-        g.redGain = 1.2
+        g.blueGain = 2.5
+        g.greenGain = 1.3
+        g.redGain = 3.0
         
         wbSetting?.setWhiteBalanceModeLocked(with: g, completionHandler: nil )
         wbSetting?.unlockForConfiguration()
@@ -160,6 +159,7 @@ class ViewController: UIViewController, AVCapturePhotoCaptureDelegate {
       }
     }
   
+  //ホワイトバランスの処理(2): Red base
   @IBAction func WB2(sender: UIButton){
     print("call WB2")
     let wbSetting =  AVCaptureDevice.default(for: .video)
@@ -167,9 +167,9 @@ class ViewController: UIViewController, AVCapturePhotoCaptureDelegate {
       try wbSetting?.lockForConfiguration()
       var  g:AVCaptureDevice.WhiteBalanceGains = AVCaptureDevice.WhiteBalanceGains(redGain: 0.0, greenGain: 0.0, blueGain: 0.0)
       
-      g.blueGain = 2.0
-      g.greenGain = 2.0
-      g.redGain = 2.0
+      g.blueGain = 3.0
+      g.greenGain = 1.3
+      g.redGain = 2.5
       
       wbSetting?.setWhiteBalanceModeLocked(with: g, completionHandler: nil )
       wbSetting?.unlockForConfiguration()
@@ -182,7 +182,7 @@ class ViewController: UIViewController, AVCapturePhotoCaptureDelegate {
     }
   }
 
-  //ホワイトバランスリセットの処理
+  //ホワイトバランスリセットの処理 : yellow bases
   @IBAction func resetWB(_ sender: UIButton) {
     print("call resetWB")
     let resetWB = AVCaptureDevice.default(for: .video)

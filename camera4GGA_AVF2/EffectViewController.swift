@@ -12,9 +12,6 @@ class EffectViewController: UIViewController, UINavigationControllerDelegate, UI
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
-    // 画面遷移時に元の画像を表示
-    effectImage.image = originalImage
   }
   
   override func didReceiveMemoryWarning() {
@@ -40,13 +37,12 @@ class EffectViewController: UIViewController, UINavigationControllerDelegate, UI
     let cancelAction = UIAlertAction(title: "キャンセル", style: .cancel, handler: nil)
     alertController.addAction(cancelAction)
     
-    //iPadで落ちてしまう対策
-    alertController.popoverPresentationController?.sourceView = view
-    
     //選択肢を画面に表示
     present(alertController, animated: true, completion: nil)
+    
   }
   
+  //フィルターの選択
   @IBOutlet weak var effectImage: UIImageView!
   
   let filterArray = [
@@ -60,7 +56,7 @@ class EffectViewController: UIViewController, UINavigationControllerDelegate, UI
   var filterSelectNumber = 0
   
   // エフェクト前画像
-  // 前の画面より画像を設定
+  // 画面から画像を設定
   var originalImage : UIImage?
   
   @IBAction func effectButtonAction(_ sender: Any) {
@@ -76,11 +72,15 @@ class EffectViewController: UIViewController, UINavigationControllerDelegate, UI
       filterSelectNumber = 0
     }
     
+    guard let _originalImage = self.originalImage else {
+      return
+    }
+    
     //元々の画像の回転角度を取得
-    let rotate = originalImage!.imageOrientation
+    let rotate = _originalImage.imageOrientation
     
     //UIImage形式の画像をCIImageの画像に変換
-    let inputImage = CIImage(image: originalImage!)
+    let inputImage = CIImage(image: _originalImage)
     
     //フィルターの種類を引数で指定された種類を指定してCIFilterのインスタンスを取得
     let effectFilter = CIFilter(name: filterName)!
@@ -102,28 +102,63 @@ class EffectViewController: UIViewController, UINavigationControllerDelegate, UI
     
     //エフェクト後の画像をCGImage形式の画像からUIImage形式の画像に回転角度を指定して変換しImageViewに表示
     effectImage.image = UIImage(cgImage: cgImage!, scale: 1.0, orientation: rotate)
-    
+  }
+  
+  //画像を表示
+  func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+    let image = info[UIImagePickerControllerOriginalImage] as! UIImage
+    self.originalImage = image
+    self.effectImage.image = image
+    self.dismiss(animated: true)
   }
   
   //画像を保存
-  //  func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-  //    let image = info[UIImagePickerControllerOriginalImage] as! UIImage
-  //    self.effectImage.image = image
-  //    UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
-  //    self.dismiss(animated: true)
-  //  }
+  @IBAction func saveImage(_ sender: Any){
+    UIImageWriteToSavedPhotosAlbum(effectImage.image!, nil, nil, nil)
+//    self.dismiss(animated: true)
+  }
+  
+  func showResultOfSaveImage(_ image: UIImage, didFinishSavingWithError error: NSError!, contextInfo: UnsafeMutableRawPointer) {
+    var title = "保存完了"
+    var message = "カメラロールに保存しました"
+    if error != nil {
+      title = "エラー"
+      message = "保存に失敗しました"
+    }
+    let alert = UIAlertController(title: "保存完了", message: "フォトライブラリーに保存しました", preferredStyle: .alert)
+    // OKボタンを追加
+    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+    //UIAlertController を表示
+    self.present(alert, animated: true, completion: nil)
+  }
+  
+  
+//  func saveImageResult (image:UIImage, didFinishSavingWithError error: Error!, contextInfo: UnsafeMutablePointer<Void>) {
+//    let alert: UIAlertController = UIAlertController (title: "保存完了", message: "フォトライブラリーに保存しました", preferredStyle: UIAlertControllerStyle.alert)
+//    let CancelAction: UIAlertAction = UIAlertAction(title: "キャンセル", style:UIAlertActionStyle.cancel, handler:{
+//    (action: UIAlertAction!) -> Void in print ("OK")
+//    })
+//    let defaltAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler:{(action:UIAlertAction) -> Void in print("OK")})
+//    alert.addAction(CancelAction)
+//    alert.addAction(defaltAction)
+//
+//    present(alert, animated: true, completion: nil)
+//
+//  }
   
   //保存した結果をアラートで表示
-  //  func showResultOfSaveImage(_image: UIImage, didFinishSavingWithError error: NSError!, contextInfo: UnsafeMutableRawPointer){
-  //    var title = "保存完了"
-  //    var message = "カメラロールに保存しました"
-  //    if error != nil{
-  //      title = "エラー"
-  //      message = "保存に失敗しました"
-  //    }
+//  func showResultOfSaveImage(_image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeMutableRawPointer){
+//    var title = "保存完了"
+//    var message = "カメラロールに保存しました"
+//    if error != nil{
+//      title = "エラー"
+//      message = "保存に失敗しました"
+//    }
+//  }
   
   @IBAction func closeButtonAction(_ sender: Any) {
     dismiss(animated: true, completion: nil)
   }
 }
+
 

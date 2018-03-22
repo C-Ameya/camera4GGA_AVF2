@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B9E9C5108E81579EFE60C64B /* Pods_camera4GGA_AVF2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97E6DECE8EA2A51F1BCD2C96 /* Pods_camera4GGA_AVF2.framework */; };
 		C02F79C3205E325000EFED78 /* close32x32.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C02F79C2205E325000EFED78 /* close32x32.jpeg */; };
 		C02F79C5205E325900EFED78 /* EffectIcon32x32.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C02F79C4205E325900EFED78 /* EffectIcon32x32.jpeg */; };
 		C02F79C7205E329C00EFED78 /* EffectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02F79C6205E329C00EFED78 /* EffectViewController.swift */; };
+		C02F79C9205FD84200EFED78 /* effect48x48.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C02F79C8205FD84100EFED78 /* effect48x48.jpg */; };
+		C02F79CB205FD85300EFED78 /* close48x48.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C02F79CA205FD85300EFED78 /* close48x48.jpg */; };
 		C06FC176205669E5000C5244 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06FC175205669E5000C5244 /* AppDelegate.swift */; };
 		C06FC178205669E5000C5244 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06FC177205669E5000C5244 /* ViewController.swift */; };
 		C06FC17B205669E5000C5244 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C06FC179205669E5000C5244 /* Main.storyboard */; };
@@ -17,12 +20,20 @@
 		C06FC180205669E5000C5244 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C06FC17E205669E5000C5244 /* LaunchScreen.storyboard */; };
 		C06FC1882056C871000C5244 /* WhiteCameraIcon32x32.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C06FC1872056C871000C5244 /* WhiteCameraIcon32x32.jpg */; };
 		C06FC18A2057AB30000C5244 /* camera44x44wb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C06FC1892057AB30000C5244 /* camera44x44wb.jpg */; };
+		C0EF45432060FC1E0067D6E7 /* save48x48.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C0EF45422060FC1E0067D6E7 /* save48x48.jpg */; };
+		C0EF45452061053E0067D6E7 /* Venice Blue.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C0EF45442061053E0067D6E7 /* Venice Blue.jpg */; };
+		C0EF4547206105C40067D6E7 /* camera-shutter.png in Resources */ = {isa = PBXBuildFile; fileRef = C0EF4546206105C40067D6E7 /* camera-shutter.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		78A2F2A15689DFA8D4B9487B /* Pods-camera4GGA_AVF2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-camera4GGA_AVF2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-camera4GGA_AVF2/Pods-camera4GGA_AVF2.debug.xcconfig"; sourceTree = "<group>"; };
+		9428464B58ADD18D30C8366B /* Pods-camera4GGA_AVF2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-camera4GGA_AVF2.release.xcconfig"; path = "Pods/Target Support Files/Pods-camera4GGA_AVF2/Pods-camera4GGA_AVF2.release.xcconfig"; sourceTree = "<group>"; };
+		97E6DECE8EA2A51F1BCD2C96 /* Pods_camera4GGA_AVF2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_camera4GGA_AVF2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C02F79C2205E325000EFED78 /* close32x32.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = close32x32.jpeg; sourceTree = "<group>"; };
 		C02F79C4205E325900EFED78 /* EffectIcon32x32.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = EffectIcon32x32.jpeg; sourceTree = "<group>"; };
 		C02F79C6205E329C00EFED78 /* EffectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectViewController.swift; sourceTree = "<group>"; };
+		C02F79C8205FD84100EFED78 /* effect48x48.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = effect48x48.jpg; sourceTree = "<group>"; };
+		C02F79CA205FD85300EFED78 /* close48x48.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = close48x48.jpg; sourceTree = "<group>"; };
 		C06FC172205669E5000C5244 /* camera4GGA_AVF2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = camera4GGA_AVF2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C06FC175205669E5000C5244 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C06FC177205669E5000C5244 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -32,6 +43,9 @@
 		C06FC181205669E5000C5244 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C06FC1872056C871000C5244 /* WhiteCameraIcon32x32.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhiteCameraIcon32x32.jpg; sourceTree = "<group>"; };
 		C06FC1892057AB30000C5244 /* camera44x44wb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = camera44x44wb.jpg; sourceTree = "<group>"; };
+		C0EF45422060FC1E0067D6E7 /* save48x48.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = save48x48.jpg; sourceTree = "<group>"; };
+		C0EF45442061053E0067D6E7 /* Venice Blue.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Venice Blue.jpg"; sourceTree = "<group>"; };
+		C0EF4546206105C40067D6E7 /* camera-shutter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera-shutter.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +53,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9E9C5108E81579EFE60C64B /* Pods_camera4GGA_AVF2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		93B9944100E8B073B78E4198 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				78A2F2A15689DFA8D4B9487B /* Pods-camera4GGA_AVF2.debug.xcconfig */,
+				9428464B58ADD18D30C8366B /* Pods-camera4GGA_AVF2.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C06FC169205669E5000C5244 = {
 			isa = PBXGroup;
 			children = (
 				C06FC174205669E5000C5244 /* camera4GGA_AVF2 */,
 				C06FC173205669E5000C5244 /* Products */,
+				93B9944100E8B073B78E4198 /* Pods */,
+				CF953A6C4C6A1129E588044C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +100,22 @@
 				C06FC1872056C871000C5244 /* WhiteCameraIcon32x32.jpg */,
 				C06FC1892057AB30000C5244 /* camera44x44wb.jpg */,
 				C02F79C4205E325900EFED78 /* EffectIcon32x32.jpeg */,
+				C02F79CA205FD85300EFED78 /* close48x48.jpg */,
+				C02F79C8205FD84100EFED78 /* effect48x48.jpg */,
 				C02F79C2205E325000EFED78 /* close32x32.jpeg */,
+				C0EF45422060FC1E0067D6E7 /* save48x48.jpg */,
+				C0EF45442061053E0067D6E7 /* Venice Blue.jpg */,
+				C0EF4546206105C40067D6E7 /* camera-shutter.png */,
 			);
 			path = camera4GGA_AVF2;
+			sourceTree = "<group>";
+		};
+		CF953A6C4C6A1129E588044C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				97E6DECE8EA2A51F1BCD2C96 /* Pods_camera4GGA_AVF2.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,9 +125,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C06FC184205669E5000C5244 /* Build configuration list for PBXNativeTarget "camera4GGA_AVF2" */;
 			buildPhases = (
+				E0216973C0377CCDC03506A7 /* [CP] Check Pods Manifest.lock */,
 				C06FC16E205669E5000C5244 /* Sources */,
 				C06FC16F205669E5000C5244 /* Frameworks */,
 				C06FC170205669E5000C5244 /* Resources */,
+				F6ADCE2CDD376C3C400C3D98 /* [CP] Embed Pods Frameworks */,
+				C1180BD40BE6C11C9F18163B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -140,15 +182,74 @@
 			files = (
 				C02F79C5205E325900EFED78 /* EffectIcon32x32.jpeg in Resources */,
 				C06FC1882056C871000C5244 /* WhiteCameraIcon32x32.jpg in Resources */,
+				C0EF4547206105C40067D6E7 /* camera-shutter.png in Resources */,
 				C02F79C3205E325000EFED78 /* close32x32.jpeg in Resources */,
+				C02F79C9205FD84200EFED78 /* effect48x48.jpg in Resources */,
 				C06FC180205669E5000C5244 /* LaunchScreen.storyboard in Resources */,
 				C06FC18A2057AB30000C5244 /* camera44x44wb.jpg in Resources */,
+				C02F79CB205FD85300EFED78 /* close48x48.jpg in Resources */,
+				C0EF45452061053E0067D6E7 /* Venice Blue.jpg in Resources */,
 				C06FC17D205669E5000C5244 /* Assets.xcassets in Resources */,
 				C06FC17B205669E5000C5244 /* Main.storyboard in Resources */,
+				C0EF45432060FC1E0067D6E7 /* save48x48.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C1180BD40BE6C11C9F18163B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-camera4GGA_AVF2/Pods-camera4GGA_AVF2-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0216973C0377CCDC03506A7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-camera4GGA_AVF2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6ADCE2CDD376C3C400C3D98 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-camera4GGA_AVF2/Pods-camera4GGA_AVF2-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BWWalkthrough/BWWalkthrough.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BWWalkthrough.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-camera4GGA_AVF2/Pods-camera4GGA_AVF2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C06FC16E205669E5000C5244 /* Sources */ = {
@@ -292,6 +393,7 @@
 		};
 		C06FC185205669E5000C5244 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78A2F2A15689DFA8D4B9487B /* Pods-camera4GGA_AVF2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -307,6 +409,7 @@
 		};
 		C06FC186205669E5000C5244 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9428464B58ADD18D30C8366B /* Pods-camera4GGA_AVF2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -10,6 +10,30 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Walkthrough Page View Controller-->
+        <scene sceneID="p3S-fd-heY">
+            <objects>
+                <viewController id="qKH-7a-CPz" customClass="BWWalkthroughPageViewController" customModule="BWWalkthrough" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4sr-kl-VDj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="f9i-cJ-yrF"/>
+                    </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="point" keyPath="speed">
+                            <point key="value" x="1" y="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="point" keyPath="speedVariance">
+                            <point key="value" x="0.0" y="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="animationType" value="Linear"/>
+                    </userDefinedRuntimeAttributes>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vm6-Jp-FDV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1714" y="133"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -40,7 +64,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.094117647058823528" green="0.36862745098039218" blue="0.50980392156862742" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal" title="ON">
+                                        <state key="normal" title="WB1">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
@@ -64,13 +88,6 @@
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Shutter Speed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EcI-5z-J4d">
                                         <rect key="frame" x="18" y="60" width="122" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="WB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1CA-4a-YYO">
-                                        <rect key="frame" x="209" y="21" width="42" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -106,7 +123,8 @@
                                         <rect key="frame" x="265" y="58" width="44" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.072846405208110809" green="0.63150501251220703" blue="0.71285700798034668" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="ON2">
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="WB2">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
@@ -114,12 +132,20 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1N3-dM-IA6">
-                                        <rect key="frame" x="265" y="8" width="44" height="44"/>
+                                        <rect key="frame" x="207" y="6" width="44" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" image="camera44x44wb"/>
                                         <connections>
                                             <action selector="capture:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C8k-oP-oQE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="63J-mq-OfC">
+                                        <rect key="frame" x="262" y="4" width="48" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="effect48x48.jpg"/>
+                                        <connections>
+                                            <segue destination="crz-G6-Heq" kind="show" id="v4F-yX-Qkf"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -135,7 +161,6 @@
                         <outlet property="preView" destination="W8b-xK-7Kn" id="6Nu-0Y-Prd"/>
                         <outlet property="ssSlider" destination="nrz-pd-lhm" id="9IC-uy-T8p"/>
                         <outlet property="ssValue" destination="I5D-vR-ShR" id="5rT-Lu-PNf"/>
-                        <segue destination="crz-G6-Heq" kind="show" id="aIX-ME-0ja"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -155,28 +180,38 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QGh-8m-O2L">
-                                        <rect key="frame" x="68" y="12" width="32" height="32"/>
+                                        <rect key="frame" x="34" y="9" width="40" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="close32x32.jpeg"/>
+                                        <state key="normal" image="close48x48"/>
                                         <connections>
                                             <action selector="closeButtonAction:" destination="crz-G6-Heq" eventType="touchUpInside" id="Mbk-ZX-30v"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hQP-6W-X0U">
-                                        <rect key="frame" x="294" y="12" width="32" height="32"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="EffectIcon32x32.jpeg"/>
-                                        <connections>
-                                            <action selector="effectButtonAction:" destination="TZe-jf-rxS" eventType="touchUpInside" id="BEh-eD-IeA"/>
-                                            <action selector="effectButtonAction:" destination="crz-G6-Heq" eventType="touchUpInside" id="jgj-Yp-wBx"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WO6-XW-O9f">
-                                        <rect key="frame" x="177" y="4" width="48" height="48"/>
+                                        <rect key="frame" x="130" y="8" width="44" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="camera44x44wb"/>
                                         <connections>
                                             <action selector="photoSelect:" destination="crz-G6-Heq" eventType="touchUpInside" id="KHB-vS-5ZV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mc7-AF-aSb">
+                                        <rect key="frame" x="315" y="11" width="38" height="38"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="保存" image="save48x48">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="saveImage:" destination="crz-G6-Heq" eventType="touchUpInside" id="mfS-e7-sFm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hQP-6W-X0U">
+                                        <rect key="frame" x="224" y="6" width="44" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="effect48x48"/>
+                                        <connections>
+                                            <action selector="effectButtonAction:" destination="TZe-jf-rxS" eventType="touchUpInside" id="BEh-eD-IeA"/>
+                                            <action selector="effectButtonAction:" destination="crz-G6-Heq" eventType="touchUpInside" id="jgj-Yp-wBx"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -202,8 +237,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="EffectIcon32x32.jpeg" width="32" height="32"/>
         <image name="camera44x44wb" width="48" height="48"/>
-        <image name="close32x32.jpeg" width="32" height="32"/>
+        <image name="close48x48" width="48" height="48"/>
+        <image name="effect48x48" width="48" height="48"/>
+        <image name="effect48x48.jpg" width="48" height="48"/>
+        <image name="save48x48" width="48" height="48"/>
     </resources>
 </document>
