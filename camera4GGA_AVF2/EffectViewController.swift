@@ -114,13 +114,15 @@ class EffectViewController: UIViewController, UINavigationControllerDelegate, UI
   
   //画像を保存
   @IBAction func saveImage(_ sender: Any){
-    UIImageWriteToSavedPhotosAlbum(effectImage.image!, nil, nil, nil)
+    UIImageWriteToSavedPhotosAlbum(effectImage.image!, self, #selector(showResultOfSaveImage(_:didFinishSavingWithError:contextInfo:)), nil)
 //    self.dismiss(animated: true)
   }
   
-  func showResultOfSaveImage(_ image: UIImage, didFinishSavingWithError error: NSError!, contextInfo: UnsafeMutableRawPointer) {
+  //保存した結果をアラートで表示
+  @objc
+  func showResultOfSaveImage(_ image: UIImage, didFinishSavingWithError error: Error!, contextInfo: UnsafeMutableRawPointer) {
     var title = "保存完了"
-    var message = "カメラロールに保存しました"
+    var message = "フォトライブラリーに保存しました"
     if error != nil {
       title = "エラー"
       message = "保存に失敗しました"
@@ -128,33 +130,9 @@ class EffectViewController: UIViewController, UINavigationControllerDelegate, UI
     let alert = UIAlertController(title: "保存完了", message: "フォトライブラリーに保存しました", preferredStyle: .alert)
     // OKボタンを追加
     alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-    //UIAlertController を表示
+    //UIAlertControllerを表示
     self.present(alert, animated: true, completion: nil)
   }
-  
-  
-//  func saveImageResult (image:UIImage, didFinishSavingWithError error: Error!, contextInfo: UnsafeMutablePointer<Void>) {
-//    let alert: UIAlertController = UIAlertController (title: "保存完了", message: "フォトライブラリーに保存しました", preferredStyle: UIAlertControllerStyle.alert)
-//    let CancelAction: UIAlertAction = UIAlertAction(title: "キャンセル", style:UIAlertActionStyle.cancel, handler:{
-//    (action: UIAlertAction!) -> Void in print ("OK")
-//    })
-//    let defaltAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler:{(action:UIAlertAction) -> Void in print("OK")})
-//    alert.addAction(CancelAction)
-//    alert.addAction(defaltAction)
-//
-//    present(alert, animated: true, completion: nil)
-//
-//  }
-  
-  //保存した結果をアラートで表示
-//  func showResultOfSaveImage(_image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeMutableRawPointer){
-//    var title = "保存完了"
-//    var message = "カメラロールに保存しました"
-//    if error != nil{
-//      title = "エラー"
-//      message = "保存に失敗しました"
-//    }
-//  }
   
   @IBAction func closeButtonAction(_ sender: Any) {
     dismiss(animated: true, completion: nil)

@@ -125,9 +125,9 @@ class ViewController: UIViewController, AVCapturePhotoCaptureDelegate {
       let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
       alertController.addAction(defaultAction)
       present(alertController, animated: true, completion: nil)
-
     }
   }
+    
   
   @IBOutlet weak var ssValue: UILabel!
   
