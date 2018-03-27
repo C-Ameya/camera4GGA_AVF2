@@ -9,31 +9,8 @@
 import UIKit
 import AVFoundation
 import Photos
-import BWWalkthrough
 
-class ViewController: UIViewController, AVCapturePhotoCaptureDelegate, BWWalkthroughViewControllerDelegate {
-  
-  @IBAction func startWalkthrough(_ sender: Any) {
-    print("startWalkthrough")
-    let stb = UIStoryboard(name: "Main", bundle: nil)
-    let walkthrough = stb.instantiateViewController(withIdentifier: "walk0") as! BWWalkthroughViewController
-    let page_one = stb.instantiateViewController(withIdentifier: "walk1") as UIViewController
-    let page_two = stb.instantiateViewController(withIdentifier: "walk2") as UIViewController
-    let page_three = stb.instantiateViewController(withIdentifier: "walk3") as UIViewController
-    
-    //マスターにページを追加
-    walkthrough.delegate = self
-    walkthrough.add(viewController:page_one)
-    walkthrough.add(viewController:page_two)
-    walkthrough.add(viewController:page_three)
-    
-    self.present(walkthrough, animated: true, completion: nil)
-  }
-  
-  func walkthroughCloseButtonPressed() {
-    print("startWalkthrough")
-    self.dismiss (animated: true, completion: nil)
-  }
+class ViewController: UIViewController, AVCapturePhotoCaptureDelegate  {
   
   //カメラセッション
   var captureSession: AVCaptureSession!

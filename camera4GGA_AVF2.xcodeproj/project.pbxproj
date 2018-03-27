@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B9E9C5108E81579EFE60C64B /* Pods_camera4GGA_AVF2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97E6DECE8EA2A51F1BCD2C96 /* Pods_camera4GGA_AVF2.framework */; };
+		C00EEF3C206A69600058B07F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00EEF3B206A69600058B07F /* MainViewController.swift */; };
+		C00EEF3E206A6F650058B07F /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00EEF3D206A6F650058B07F /* WalkthroughViewController.swift */; };
 		C02F79C3205E325000EFED78 /* close32x32.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C02F79C2205E325000EFED78 /* close32x32.jpeg */; };
 		C02F79C5205E325900EFED78 /* EffectIcon32x32.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C02F79C4205E325900EFED78 /* EffectIcon32x32.jpeg */; };
 		C02F79C7205E329C00EFED78 /* EffectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02F79C6205E329C00EFED78 /* EffectViewController.swift */; };
@@ -23,8 +25,6 @@
 		C0EF45432060FC1E0067D6E7 /* save48x48.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C0EF45422060FC1E0067D6E7 /* save48x48.jpg */; };
 		C0EF45452061053E0067D6E7 /* Venice Blue.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C0EF45442061053E0067D6E7 /* Venice Blue.jpg */; };
 		C0EF4547206105C40067D6E7 /* camera-shutter.png in Resources */ = {isa = PBXBuildFile; fileRef = C0EF4546206105C40067D6E7 /* camera-shutter.png */; };
-		C0EF454A2068AB9B0067D6E7 /* BWWalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EF45482068AB9B0067D6E7 /* BWWalkthroughViewController.swift */; };
-		C0EF454B2068AB9B0067D6E7 /* BWWalkthroughPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EF45492068AB9B0067D6E7 /* BWWalkthroughPageViewController.swift */; };
 		C0EF454F2068B3460067D6E7 /* Aqua Marine.png in Resources */ = {isa = PBXBuildFile; fileRef = C0EF454C2068B3450067D6E7 /* Aqua Marine.png */; };
 		C0EF45502068B3460067D6E7 /* Chitty Chitty Bang Bang.png in Resources */ = {isa = PBXBuildFile; fileRef = C0EF454D2068B3450067D6E7 /* Chitty Chitty Bang Bang.png */; };
 		C0EF45512068B3460067D6E7 /* Endless River (1).png in Resources */ = {isa = PBXBuildFile; fileRef = C0EF454E2068B3460067D6E7 /* Endless River (1).png */; };
@@ -37,6 +37,8 @@
 		78A2F2A15689DFA8D4B9487B /* Pods-camera4GGA_AVF2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-camera4GGA_AVF2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-camera4GGA_AVF2/Pods-camera4GGA_AVF2.debug.xcconfig"; sourceTree = "<group>"; };
 		9428464B58ADD18D30C8366B /* Pods-camera4GGA_AVF2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-camera4GGA_AVF2.release.xcconfig"; path = "Pods/Target Support Files/Pods-camera4GGA_AVF2/Pods-camera4GGA_AVF2.release.xcconfig"; sourceTree = "<group>"; };
 		97E6DECE8EA2A51F1BCD2C96 /* Pods_camera4GGA_AVF2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_camera4GGA_AVF2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C00EEF3B206A69600058B07F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		C00EEF3D206A6F650058B07F /* WalkthroughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughViewController.swift; sourceTree = "<group>"; };
 		C02F79C2205E325000EFED78 /* close32x32.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = close32x32.jpeg; sourceTree = "<group>"; };
 		C02F79C4205E325900EFED78 /* EffectIcon32x32.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = EffectIcon32x32.jpeg; sourceTree = "<group>"; };
 		C02F79C6205E329C00EFED78 /* EffectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectViewController.swift; sourceTree = "<group>"; };
@@ -54,8 +56,6 @@
 		C0EF45422060FC1E0067D6E7 /* save48x48.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = save48x48.jpg; sourceTree = "<group>"; };
 		C0EF45442061053E0067D6E7 /* Venice Blue.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Venice Blue.jpg"; sourceTree = "<group>"; };
 		C0EF4546206105C40067D6E7 /* camera-shutter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera-shutter.png"; sourceTree = "<group>"; };
-		C0EF45482068AB9B0067D6E7 /* BWWalkthroughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BWWalkthroughViewController.swift; sourceTree = "<group>"; };
-		C0EF45492068AB9B0067D6E7 /* BWWalkthroughPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BWWalkthroughPageViewController.swift; sourceTree = "<group>"; };
 		C0EF454C2068B3450067D6E7 /* Aqua Marine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Aqua Marine.png"; sourceTree = "<group>"; };
 		C0EF454D2068B3450067D6E7 /* Chitty Chitty Bang Bang.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Chitty Chitty Bang Bang.png"; sourceTree = "<group>"; };
 		C0EF454E2068B3460067D6E7 /* Endless River (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Endless River (1).png"; sourceTree = "<group>"; };
@@ -109,9 +109,9 @@
 				C06FC175205669E5000C5244 /* AppDelegate.swift */,
 				C06FC177205669E5000C5244 /* ViewController.swift */,
 				C02F79C6205E329C00EFED78 /* EffectViewController.swift */,
-				C0EF45492068AB9B0067D6E7 /* BWWalkthroughPageViewController.swift */,
-				C0EF45482068AB9B0067D6E7 /* BWWalkthroughViewController.swift */,
 				C06FC179205669E5000C5244 /* Main.storyboard */,
+				C00EEF3D206A6F650058B07F /* WalkthroughViewController.swift */,
+				C00EEF3B206A69600058B07F /* MainViewController.swift */,
 				C06FC17E205669E5000C5244 /* LaunchScreen.storyboard */,
 				C06FC17C205669E5000C5244 /* Assets.xcassets */,
 				C06FC181205669E5000C5244 /* Info.plist */,
@@ -294,11 +294,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0EF454A2068AB9B0067D6E7 /* BWWalkthroughViewController.swift in Sources */,
 				C06FC178205669E5000C5244 /* ViewController.swift in Sources */,
 				C06FC176205669E5000C5244 /* AppDelegate.swift in Sources */,
+				C00EEF3C206A69600058B07F /* MainViewController.swift in Sources */,
 				C02F79C7205E329C00EFED78 /* EffectViewController.swift in Sources */,
-				C0EF454B2068AB9B0067D6E7 /* BWWalkthroughPageViewController.swift in Sources */,
+				C00EEF3E206A6F650058B07F /* WalkthroughViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
