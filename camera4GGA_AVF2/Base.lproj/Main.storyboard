@@ -13,8 +13,8 @@
         <!--Walkthrough View Controller-->
         <scene sceneID="p3S-fd-heY">
             <objects>
-                <viewController storyboardIdentifier="container" id="qKH-7a-CPz" customClass="BWWalkthroughViewController" customModule="camera4GGA_AVF2" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="4sr-kl-VDj">
+                <viewController storyboardIdentifier="container" id="qKH-7a-CPz" customClass="BWWalkthroughViewController" customModule="BWWalkthrough" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="UI" id="4sr-kl-VDj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -51,32 +51,57 @@
         <!--Walkthrough View Controller-->
         <scene sceneID="5NT-fr-QgN">
             <objects>
-                <viewController storyboardIdentifier="walk0" id="xAh-cz-War" customClass="BWWalkthroughViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="walk0" id="xAh-cz-War" customClass="BWWalkthroughViewController" customModule="BWWalkthrough" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lqd-Iq-PLJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Main" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i5F-CB-Nbp">
-                                <rect key="frame" x="166" y="62" width="42" height="21"/>
+                                <rect key="frame" x="166" y="34" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rkx-FN-jiS">
-                                <rect key="frame" x="166" y="571" width="46" height="30"/>
+                                <rect key="frame" x="302" y="30" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Skip"/>
                                 <connections>
                                     <action selector="close:" destination="xAh-cz-War" eventType="touchUpInside" id="vjP-WM-Zv1"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7H4-Yp-h79">
+                                <rect key="frame" x="16" y="312" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="←"/>
+                                <connections>
+                                    <action selector="prevPage" destination="xAh-cz-War" eventType="touchUpInside" id="QEY-uc-DTO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zNp-KB-8Eu">
+                                <rect key="frame" x="313" y="312" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="→"/>
+                                <connections>
+                                    <action selector="nextPage" destination="xAh-cz-War" eventType="touchUpInside" id="bvs-CF-Beg"/>
+                                </connections>
+                            </button>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="VQR-vL-N2h">
+                                <rect key="frame" x="166" y="581" width="39" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="pageIndicatorTintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Ium-P2-wSL"/>
                     </view>
                     <connections>
                         <outlet property="closeButton" destination="rkx-FN-jiS" id="fio-Lj-6Q1"/>
+                        <outlet property="nextButton" destination="zNp-KB-8Eu" id="d8g-fV-ngD"/>
+                        <outlet property="pageControl" destination="VQR-vL-N2h" id="7rL-yl-4pt"/>
+                        <outlet property="prevButton" destination="7H4-Yp-h79" id="XMi-26-ryy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DRf-F8-YDr" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -86,7 +111,7 @@
         <!--Walkthrough Page View Controller-->
         <scene sceneID="VS7-3G-uxJ">
             <objects>
-                <viewController storyboardIdentifier="walk1" id="u5z-oh-tzp" customClass="BWWalkthroughPageViewController" customModule="camera4GGA_AVF2" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="walk1" id="u5z-oh-tzp" customClass="BWWalkthroughPageViewController" customModule="BWWalkthrough" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CkR-dR-TAB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -111,6 +136,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3oA-hR-Ree"/>
                     </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="animationType" value="Liner"/>
+                        <userDefinedRuntimeAttribute type="point" keyPath="speed">
+                            <point key="value" x="0.0" y="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="point" keyPath="speedVariance">
+                            <point key="value" x="0.0" y="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VCe-Tt-63k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -119,7 +153,7 @@
         <!--Walkthrough Page View Controller-->
         <scene sceneID="yKk-Th-q6o">
             <objects>
-                <viewController storyboardIdentifier="walk2" id="HEx-dK-DfA" customClass="BWWalkthroughPageViewController" customModule="camera4GGA_AVF2" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="walk2" id="HEx-dK-DfA" customClass="BWWalkthroughPageViewController" customModule="BWWalkthrough" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ho3-3y-cnV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -144,6 +178,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3Cf-Iu-HPr"/>
                     </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="animationType" value="Liner"/>
+                    </userDefinedRuntimeAttributes>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iS9-ea-H4Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -152,7 +189,7 @@
         <!--Walkthrough Page View Controller-->
         <scene sceneID="Nt9-Z6-D7M">
             <objects>
-                <viewController storyboardIdentifier="walk3" id="4lz-L1-73B" customClass="BWWalkthroughPageViewController" customModule="camera4GGA_AVF2" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="walk3" id="4lz-L1-73B" customClass="BWWalkthroughPageViewController" customModule="BWWalkthrough" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4tc-ru-d2R">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -177,6 +214,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Qeu-Pq-esl"/>
                     </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="animationType" value="Liner"/>
+                    </userDefinedRuntimeAttributes>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rsj-f5-93N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

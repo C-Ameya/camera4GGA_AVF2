@@ -9,6 +9,7 @@
 import UIKit
 import AVFoundation
 import Photos
+import BWWalkthrough
 
 class ViewController: UIViewController, AVCapturePhotoCaptureDelegate, BWWalkthroughViewControllerDelegate {
   
