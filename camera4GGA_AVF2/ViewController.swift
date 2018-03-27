@@ -39,6 +39,7 @@ class ViewController: UIViewController, AVCapturePhotoCaptureDelegate, BWWalkthr
   var capturePhotoOutput: AVCapturePhotoOutput?
   var previewLayer: AVCaptureVideoPreviewLayer?
   var captureDevice: AVCaptureDevice?
+  var ssTimeScale: CMTimeScale = 0
   
   @IBOutlet weak var preView: UIView!
   
@@ -67,8 +68,9 @@ class ViewController: UIViewController, AVCapturePhotoCaptureDelegate, BWWalkthr
     //シャッタースピードの最小値と最大値を設定
     let minCMTime = self.captureDevice!.activeFormat.minExposureDuration
     let maxCMTime = self.captureDevice!.activeFormat.maxExposureDuration
-    self.ssSlider.minimumValue = Float(minCMTime.seconds)
-    self.ssSlider.maximumValue = Float(maxCMTime.seconds)
+    self.ssTimeScale = self.captureDevice!.activeFormat.minExposureDuration.timescale
+    self.ssSlider.minimumValue = Float(minCMTime.value)
+    self.ssSlider.maximumValue = Float(maxCMTime.value)
     
     //写真をviewに表示
     let input = try! AVCaptureDeviceInput(device: self.captureDevice!)
@@ -81,7 +83,7 @@ class ViewController: UIViewController, AVCapturePhotoCaptureDelegate, BWWalkthr
     self.preView.layer.addSublayer(self.previewLayer!)
     self.captureSession?.startRunning()
   }
-
+  
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
   }
@@ -107,8 +109,8 @@ class ViewController: UIViewController, AVCapturePhotoCaptureDelegate, BWWalkthr
       
       timerMapping = ssSlider.value
       
-      let StockTime: Int32 = Int32(timerMapping)
-      let SetTime: CMTime = CMTimeMake(1, StockTime)
+      let StockTime = Int64(timerMapping)
+      let SetTime: CMTime = CMTimeMake(StockTime, self.ssTimeScale)
       Setting?.setExposureModeCustom(duration: SetTime, iso: isoSetting, completionHandler: nil)
       
       Setting?.unlockForConfiguration()
@@ -124,7 +126,7 @@ class ViewController: UIViewController, AVCapturePhotoCaptureDelegate, BWWalkthr
   @IBOutlet weak var isoValue: UILabel!
   
   @IBAction func isoValueSlider(_ sender: UISlider) {
-//     isoValue.text = "\(sender.value)"
+    //     isoValue.text = "\(sender.value)"
     self.isoValue.text = String(format: "%.f", (self.captureDevice?.iso)!)
   }
   
@@ -134,53 +136,56 @@ class ViewController: UIViewController, AVCapturePhotoCaptureDelegate, BWWalkthr
     do {
       try Setting?.lockForConfiguration()
       let isoSetting: Float = isoSlider.value
-
+      
       timerMapping = ssSlider.value
-
-      let StockTime: Int32 = Int32(timerMapping)
-      let SetTime: CMTime = CMTimeMake(1, StockTime)
+      
+      let StockTime = Int64(timerMapping)
+      let SetTime: CMTime = CMTimeMake(StockTime, self.ssTimeScale)
       Setting?.setExposureModeCustom(duration: SetTime, iso: isoSetting, completionHandler: nil)
-
+      
       Setting?.unlockForConfiguration()
     } catch {
       let alertController = UIAlertController(title: "Cheak", message: "False", preferredStyle: .alert)
-
+      
       let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
       alertController.addAction(defaultAction)
       present(alertController, animated: true, completion: nil)
     }
   }
-    
+  
   
   @IBOutlet weak var ssValue: UILabel!
   
   @IBAction func ssValueSlider(_ sender: UISlider) {
-    let exposureDurationSeconds = CMTimeGetSeconds( (self.captureDevice?.exposureDuration)! )
-    self.ssValue.text = String(format: "1/%.f", 1.0 / exposureDurationSeconds)
+    timerMapping = ssSlider.value
+    
+    let StockTime = Int64(timerMapping)
+    let SetTime: CMTime = CMTimeMake(StockTime, self.ssTimeScale)
+    self.ssValue.text = String(format: "1/%.f", 1.0 / SetTime.seconds)
   }
-
+  
   //ホワイトバランスの処理(1):Blue base
-    @IBAction func WB(sender: UIButton){
-      print("call WB")
-      let wbSetting =  AVCaptureDevice.default(for: .video)
-      do{
-        try wbSetting?.lockForConfiguration()
-        var  g:AVCaptureDevice.WhiteBalanceGains = AVCaptureDevice.WhiteBalanceGains(redGain: 0.0, greenGain: 0.0, blueGain: 0.0)
-        
-        g.blueGain = 2.5
-        g.greenGain = 1.3
-        g.redGain = 3.0
-        
-        wbSetting?.setWhiteBalanceModeLocked(with: g, completionHandler: nil )
-        wbSetting?.unlockForConfiguration()
-      } catch {
-        let alertController = UIAlertController(title: "Cheak", message: "False", preferredStyle: .alert)
-        
-        let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
-        alertController.addAction(defaultAction)
-        present(alertController, animated: true, completion: nil)
-      }
+  @IBAction func WB(sender: UIButton){
+    print("call WB")
+    let wbSetting =  AVCaptureDevice.default(for: .video)
+    do{
+      try wbSetting?.lockForConfiguration()
+      var  g:AVCaptureDevice.WhiteBalanceGains = AVCaptureDevice.WhiteBalanceGains(redGain: 0.0, greenGain: 0.0, blueGain: 0.0)
+      
+      g.blueGain = 2.5
+      g.greenGain = 1.3
+      g.redGain = 3.0
+      
+      wbSetting?.setWhiteBalanceModeLocked(with: g, completionHandler: nil )
+      wbSetting?.unlockForConfiguration()
+    } catch {
+      let alertController = UIAlertController(title: "Cheak", message: "False", preferredStyle: .alert)
+      
+      let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+      alertController.addAction(defaultAction)
+      present(alertController, animated: true, completion: nil)
     }
+  }
   
   //ホワイトバランスの処理(2): Red base
   @IBAction func WB2(sender: UIButton){
@@ -204,7 +209,7 @@ class ViewController: UIViewController, AVCapturePhotoCaptureDelegate, BWWalkthr
       present(alertController, animated: true, completion: nil)
     }
   }
-
+  
   //ホワイトバランスリセットの処理 : yellow bases
   @IBAction func resetWB(_ sender: UIButton) {
     print("call resetWB")
