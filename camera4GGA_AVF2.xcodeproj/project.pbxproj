@@ -10,6 +10,14 @@
 		B9E9C5108E81579EFE60C64B /* Pods_camera4GGA_AVF2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97E6DECE8EA2A51F1BCD2C96 /* Pods_camera4GGA_AVF2.framework */; };
 		C00EEF3C206A69600058B07F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00EEF3B206A69600058B07F /* MainViewController.swift */; };
 		C00EEF3E206A6F650058B07F /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00EEF3D206A6F650058B07F /* WalkthroughViewController.swift */; };
+		C00EEF40206B52450058B07F /* 矢印右48x48.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C00EEF3F206B52450058B07F /* 矢印右48x48.jpg */; };
+		C00EEF42206B573D0058B07F /* Friday.png in Resources */ = {isa = PBXBuildFile; fileRef = C00EEF41206B573D0058B07F /* Friday.png */; };
+		C00EEF44206B5A0A0058B07F /* Venice Blue2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C00EEF43206B5A0A0058B07F /* Venice Blue2.jpg */; };
+		C00EEF4A206B6C210058B07F /* ISO22sample.JPG in Resources */ = {isa = PBXBuildFile; fileRef = C00EEF45206B6C200058B07F /* ISO22sample.JPG */; };
+		C00EEF4B206B6C210058B07F /* OFFsample.JPG in Resources */ = {isa = PBXBuildFile; fileRef = C00EEF46206B6C200058B07F /* OFFsample.JPG */; };
+		C00EEF4C206B6C210058B07F /* WB2sample.JPG in Resources */ = {isa = PBXBuildFile; fileRef = C00EEF47206B6C200058B07F /* WB2sample.JPG */; };
+		C00EEF4D206B6C210058B07F /* ISO400sample.JPG in Resources */ = {isa = PBXBuildFile; fileRef = C00EEF48206B6C210058B07F /* ISO400sample.JPG */; };
+		C00EEF4E206B6C210058B07F /* WB1sample.JPG in Resources */ = {isa = PBXBuildFile; fileRef = C00EEF49206B6C210058B07F /* WB1sample.JPG */; };
 		C02F79C3205E325000EFED78 /* close32x32.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C02F79C2205E325000EFED78 /* close32x32.jpeg */; };
 		C02F79C5205E325900EFED78 /* EffectIcon32x32.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C02F79C4205E325900EFED78 /* EffectIcon32x32.jpeg */; };
 		C02F79C7205E329C00EFED78 /* EffectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02F79C6205E329C00EFED78 /* EffectViewController.swift */; };
@@ -39,6 +47,14 @@
 		97E6DECE8EA2A51F1BCD2C96 /* Pods_camera4GGA_AVF2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_camera4GGA_AVF2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C00EEF3B206A69600058B07F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		C00EEF3D206A6F650058B07F /* WalkthroughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughViewController.swift; sourceTree = "<group>"; };
+		C00EEF3F206B52450058B07F /* 矢印右48x48.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "矢印右48x48.jpg"; sourceTree = "<group>"; };
+		C00EEF41206B573D0058B07F /* Friday.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Friday.png; sourceTree = "<group>"; };
+		C00EEF43206B5A0A0058B07F /* Venice Blue2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Venice Blue2.jpg"; sourceTree = "<group>"; };
+		C00EEF45206B6C200058B07F /* ISO22sample.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ISO22sample.JPG; sourceTree = "<group>"; };
+		C00EEF46206B6C200058B07F /* OFFsample.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = OFFsample.JPG; sourceTree = "<group>"; };
+		C00EEF47206B6C200058B07F /* WB2sample.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WB2sample.JPG; sourceTree = "<group>"; };
+		C00EEF48206B6C210058B07F /* ISO400sample.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ISO400sample.JPG; sourceTree = "<group>"; };
+		C00EEF49206B6C210058B07F /* WB1sample.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WB1sample.JPG; sourceTree = "<group>"; };
 		C02F79C2205E325000EFED78 /* close32x32.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = close32x32.jpeg; sourceTree = "<group>"; };
 		C02F79C4205E325900EFED78 /* EffectIcon32x32.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = EffectIcon32x32.jpeg; sourceTree = "<group>"; };
 		C02F79C6205E329C00EFED78 /* EffectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +139,12 @@
 		C0EF45522068B4110067D6E7 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				C00EEF45206B6C200058B07F /* ISO22sample.JPG */,
+				C00EEF48206B6C210058B07F /* ISO400sample.JPG */,
+				C00EEF46206B6C200058B07F /* OFFsample.JPG */,
+				C00EEF49206B6C210058B07F /* WB1sample.JPG */,
+				C00EEF47206B6C200058B07F /* WB2sample.JPG */,
+				C00EEF3F206B52450058B07F /* 矢印右48x48.jpg */,
 				C0EF45532068BF5C0067D6E7 /* album2_48x48.jpeg */,
 				C0EF45552068C0030067D6E7 /* album3_48x48.jpeg */,
 				C0EF45572068C0CA0067D6E7 /* album48x48.jpg */,
@@ -136,7 +158,9 @@
 				C02F79C8205FD84100EFED78 /* effect48x48.jpg */,
 				C02F79C2205E325000EFED78 /* close32x32.jpeg */,
 				C0EF45422060FC1E0067D6E7 /* save48x48.jpg */,
+				C00EEF41206B573D0058B07F /* Friday.png */,
 				C0EF45442061053E0067D6E7 /* Venice Blue.jpg */,
+				C00EEF43206B5A0A0058B07F /* Venice Blue2.jpg */,
 				C0EF4546206105C40067D6E7 /* camera-shutter.png */,
 			);
 			path = Images;
@@ -212,15 +236,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C00EEF4E206B6C210058B07F /* WB1sample.JPG in Resources */,
 				C02F79C5205E325900EFED78 /* EffectIcon32x32.jpeg in Resources */,
 				C06FC1882056C871000C5244 /* WhiteCameraIcon32x32.jpg in Resources */,
 				C0EF45512068B3460067D6E7 /* Endless River (1).png in Resources */,
 				C0EF4547206105C40067D6E7 /* camera-shutter.png in Resources */,
 				C0EF45582068C0CA0067D6E7 /* album48x48.jpg in Resources */,
 				C02F79C3205E325000EFED78 /* close32x32.jpeg in Resources */,
+				C00EEF4D206B6C210058B07F /* ISO400sample.JPG in Resources */,
 				C0EF45502068B3460067D6E7 /* Chitty Chitty Bang Bang.png in Resources */,
 				C02F79C9205FD84200EFED78 /* effect48x48.jpg in Resources */,
+				C00EEF44206B5A0A0058B07F /* Venice Blue2.jpg in Resources */,
+				C00EEF4C206B6C210058B07F /* WB2sample.JPG in Resources */,
+				C00EEF42206B573D0058B07F /* Friday.png in Resources */,
+				C00EEF4B206B6C210058B07F /* OFFsample.JPG in Resources */,
 				C0EF45542068BF5C0067D6E7 /* album2_48x48.jpeg in Resources */,
+				C00EEF40206B52450058B07F /* 矢印右48x48.jpg in Resources */,
 				C06FC180205669E5000C5244 /* LaunchScreen.storyboard in Resources */,
 				C06FC18A2057AB30000C5244 /* camera44x44wb.jpg in Resources */,
 				C02F79CB205FD85300EFED78 /* close48x48.jpg in Resources */,
@@ -228,6 +259,7 @@
 				C0EF45562068C0040067D6E7 /* album3_48x48.jpeg in Resources */,
 				C06FC17D205669E5000C5244 /* Assets.xcassets in Resources */,
 				C0EF454F2068B3460067D6E7 /* Aqua Marine.png in Resources */,
+				C00EEF4A206B6C210058B07F /* ISO22sample.JPG in Resources */,
 				C06FC17B205669E5000C5244 /* Main.storyboard in Resources */,
 				C0EF45432060FC1E0067D6E7 /* save48x48.jpg in Resources */,
 			);
