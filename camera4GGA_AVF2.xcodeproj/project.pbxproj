@@ -20,6 +20,7 @@
 		C00EEF4E206B6C210058B07F /* WB1sample.JPG in Resources */ = {isa = PBXBuildFile; fileRef = C00EEF49206B6C210058B07F /* WB1sample.JPG */; };
 		C00EEF57206B8AAB0058B07F /* ISO22_1:7.JPG in Resources */ = {isa = PBXBuildFile; fileRef = C00EEF55206B8AAA0058B07F /* ISO22_1:7.JPG */; };
 		C00EEF58206B8AAB0058B07F /* ISO880_1:271.JPG in Resources */ = {isa = PBXBuildFile; fileRef = C00EEF56206B8AAA0058B07F /* ISO880_1:271.JPG */; };
+		C00EEF60206E22ED0058B07F /* save48x48.png in Resources */ = {isa = PBXBuildFile; fileRef = C00EEF5F206E22ED0058B07F /* save48x48.png */; };
 		C02F79C3205E325000EFED78 /* close32x32.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C02F79C2205E325000EFED78 /* close32x32.jpeg */; };
 		C02F79C5205E325900EFED78 /* EffectIcon32x32.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C02F79C4205E325900EFED78 /* EffectIcon32x32.jpeg */; };
 		C02F79C7205E329C00EFED78 /* EffectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02F79C6205E329C00EFED78 /* EffectViewController.swift */; };
@@ -59,6 +60,7 @@
 		C00EEF49206B6C210058B07F /* WB1sample.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WB1sample.JPG; sourceTree = "<group>"; };
 		C00EEF55206B8AAA0058B07F /* ISO22_1:7.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ISO22_1:7.JPG"; sourceTree = "<group>"; };
 		C00EEF56206B8AAA0058B07F /* ISO880_1:271.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ISO880_1:271.JPG"; sourceTree = "<group>"; };
+		C00EEF5F206E22ED0058B07F /* save48x48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = save48x48.png; sourceTree = "<group>"; };
 		C02F79C2205E325000EFED78 /* close32x32.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = close32x32.jpeg; sourceTree = "<group>"; };
 		C02F79C4205E325900EFED78 /* EffectIcon32x32.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = EffectIcon32x32.jpeg; sourceTree = "<group>"; };
 		C02F79C6205E329C00EFED78 /* EffectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectViewController.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 		C0EF45522068B4110067D6E7 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				C00EEF5F206E22ED0058B07F /* save48x48.png */,
 				C00EEF55206B8AAA0058B07F /* ISO22_1:7.JPG */,
 				C00EEF56206B8AAA0058B07F /* ISO880_1:271.JPG */,
 				C00EEF45206B6C200058B07F /* ISO22sample.JPG */,
@@ -262,6 +265,7 @@
 				C06FC180205669E5000C5244 /* LaunchScreen.storyboard in Resources */,
 				C06FC18A2057AB30000C5244 /* camera44x44wb.jpg in Resources */,
 				C02F79CB205FD85300EFED78 /* close48x48.jpg in Resources */,
+				C00EEF60206E22ED0058B07F /* save48x48.png in Resources */,
 				C0EF45452061053E0067D6E7 /* Venice Blue.jpg in Resources */,
 				C0EF45562068C0040067D6E7 /* album3_48x48.jpeg in Resources */,
 				C06FC17D205669E5000C5244 /* Assets.xcassets in Resources */,

@@ -4,21 +4,21 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>BWWalkthrough.xcscheme</key>
+		<key>BWWalkthrough.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>isShown</key>
 			<true/>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
-		<key>Pods-camera4GGA_AVF2.xcscheme</key>
+		<key>Pods-camera4GGA_AVF2.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>isShown</key>
 			<true/>
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
-		<key>camera4GGA_AVF2_copy.xcscheme</key>
+		<key>camera4GGA_AVF2_copy.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>

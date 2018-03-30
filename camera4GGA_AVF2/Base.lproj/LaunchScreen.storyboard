@@ -21,23 +21,24 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Venice Blue" translatesAutoresizingMaskIntoConstraints="NO" id="8Zx-4A-Dtt">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="if_camera-shutter_353402" translatesAutoresizingMaskIntoConstraints="NO" id="YbT-ig-jhL">
-                                <rect key="frame" x="76" y="187" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="moments." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbM-FP-016">
-                                <rect key="frame" x="84" y="323" width="254" height="75"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="moments." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbM-FP-016">
+                                <rect key="frame" x="71.5" y="303.5" width="232" height="60"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="if_camera-shutter_353402" translatesAutoresizingMaskIntoConstraints="NO" id="YbT-ig-jhL">
+                                <rect key="frame" x="67" y="182" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="nbM-FP-016" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="0cj-Vv-1md"/>
                             <constraint firstItem="8Zx-4A-Dtt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8Sn-Oq-Ks2"/>
                             <constraint firstItem="8Zx-4A-Dtt" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="NVe-Bp-r9G"/>
                             <constraint firstItem="8Zx-4A-Dtt" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="WgN-Jh-XaF"/>
+                            <constraint firstItem="nbM-FP-016" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="psx-o0-RVP"/>
                             <constraint firstItem="8Zx-4A-Dtt" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="xS1-9n-qhL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

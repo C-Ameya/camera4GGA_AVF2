@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qKH-7a-CPz">
-    <device id="retina4_0" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,16 +15,15 @@
             <objects>
                 <viewController storyboardIdentifier="container" id="qKH-7a-CPz" customClass="MainViewController" customModule="camera4GGA_AVF2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleAspectFit" restorationIdentifier="UI" id="4sr-kl-VDj">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Venice Blue2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="IYT-FL-bAl">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Venice Blue2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="IYT-FL-bAl">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K5s-n3-sRF">
-                                <rect key="frame" x="36" y="324" width="302" height="18"/>
-                                <autoresizingMask key="autoresizingMask"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K5s-n3-sRF">
+                                <rect key="frame" x="43" y="310" width="290" height="46"/>
                                 <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                 <state key="normal" title="タップ して始めよう！">
@@ -36,6 +35,10 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="K5s-n3-sRF" firstAttribute="centerY" secondItem="4sr-kl-VDj" secondAttribute="centerY" id="tb4-gJ-tdq"/>
+                            <constraint firstItem="K5s-n3-sRF" firstAttribute="centerX" secondItem="4sr-kl-VDj" secondAttribute="centerX" id="yCB-Dh-y3J"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="f9i-cJ-yrF"/>
                     </view>
                 </viewController>
@@ -48,7 +51,7 @@
             <objects>
                 <viewController storyboardIdentifier="walk0" id="xAh-cz-War" customClass="WalkthroughViewController" customModule="camera4GGA_AVF2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleAspectFit" id="Lqd-Iq-PLJ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7H4-Yp-h79">
@@ -79,10 +82,10 @@
                                 <color key="pageIndicatorTintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </pageControl>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rkx-FN-jiS">
-                                <rect key="frame" x="313" y="44" width="46" height="30"/>
+                                <rect key="frame" x="299" y="44" width="60" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                <state key="normal" title="Skip">
+                                <state key="normal" title="Close">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -104,18 +107,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DRf-F8-YDr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="689" y="804"/>
+            <point key="canvasLocation" x="688.79999999999995" y="803.74812593703155"/>
         </scene>
         <!--Walkthrough Page View Controller-->
         <scene sceneID="VS7-3G-uxJ">
             <objects>
                 <viewController storyboardIdentifier="walk1" id="u5z-oh-tzp" customClass="BWWalkthroughPageViewController" customModule="BWWalkthrough" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleAspectFit" id="CkR-dR-TAB">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Venice Blue.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="LT9-VQ-HF9">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ISO感度とシャッタースピード" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oan-RC-bby">
                                 <rect key="frame" x="57" y="88" width="280" height="24"/>
@@ -138,14 +141,14 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="ISO感度とは画像センサーの光の感度を数値化したものです。数字が高いほど少ない光で明るく写すことができます。夜景などは高感度で、晴天の日は低感度で写すときれいに写せます。" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="taG-rC-m2e">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="ISO感度とは画像センサーの光の感度を数値化したものです。数字が高いほど少ない光で明るく写すことができます。夜景などは高感度で、晴天の日は低感度で写すときれいに写せます。" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="taG-rC-m2e">
                                 <rect key="frame" x="23" y="149" width="336" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="シャッタースピードとはシャッターが開いている時間のことです。速いと動いている被写体を止めたように写すことができ、遅いと被写体の動きを表現することができます。分子の数字が小さいとシャッタースピードは遅く、大きいと速くなります。" translatesAutoresizingMaskIntoConstraints="NO" id="LpL-be-o5Z">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="シャッタースピードとはシャッターが開いている時間のことです。速いと動いている被写体を止めたように写すことができ、遅いと被写体の動きを表現することができます。分子の数字が小さいとシャッタースピードは遅く、大きいと速くなります。" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LpL-be-o5Z">
                                 <rect key="frame" x="27" y="391" width="332" height="115"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -219,11 +222,11 @@
             <objects>
                 <viewController storyboardIdentifier="walk2" id="HEx-dK-DfA" customClass="BWWalkthroughPageViewController" customModule="BWWalkthrough" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleAspectFit" id="ho3-3y-cnV">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Venice Blue.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="03A-gd-nVD">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ホワイトバランスの調整" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xk8-rr-lys">
                                 <rect key="frame" x="73" y="77" width="248" height="21"/>
@@ -232,7 +235,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="被写体に当たる光の種類に応じて、写真の色味は変化します。ホワイトバランスを調整して、意図的に赤みを増したり、青みを増したりしてイメージにあった色味の写真にします。" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3pL-bo-Qns">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="被写体に当たる光の種類に応じて、写真の色味は変化します。ホワイトバランスを調整して、意図的に赤みを増したり、青みを増したりしてイメージにあった色味の写真にします。" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3pL-bo-Qns">
                                 <rect key="frame" x="36" y="106" width="323" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -316,17 +319,17 @@
             <objects>
                 <viewController storyboardIdentifier="walk3" id="4lz-L1-73B" customClass="BWWalkthroughPageViewController" customModule="BWWalkthrough" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleAspectFit" id="4tc-ru-d2R">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Venice Blue" translatesAutoresizingMaskIntoConstraints="NO" id="FSa-9s-eON">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="camera44x44wb" translatesAutoresizingMaskIntoConstraints="NO" id="6JB-rb-gcc">
                                 <rect key="frame" x="30" y="162" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="save48x48" translatesAutoresizingMaskIntoConstraints="NO" id="oSS-7t-c19">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="save48x48.png" translatesAutoresizingMaskIntoConstraints="NO" id="oSS-7t-c19">
                                 <rect key="frame" x="30" y="552" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -414,15 +417,15 @@
             <objects>
                 <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="camera4GGA_AVF2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleAspectFit" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W8b-xK-7Kn">
+                            <view contentMode="scaleAspectFit" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W8b-xK-7Kn">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="551"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Y8-lj-Elt">
+                            <view contentMode="scaleAspectFit" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Y8-lj-Elt">
                                 <rect key="frame" x="0.0" y="549" width="375" height="118"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <subviews>
@@ -547,7 +550,7 @@
             <objects>
                 <viewController id="crz-G6-Heq" customClass="EffectViewController" customModule="camera4GGA_AVF2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleAspectFit" id="8bl-77-gic">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AwH-WO-8Y0">
@@ -573,7 +576,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mc7-AF-aSb">
                                         <rect key="frame" x="315" y="11" width="38" height="38"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="保存" image="save48x48">
+                                        <state key="normal" title="保存" image="save48x48.png">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
@@ -627,6 +630,6 @@
         <image name="close48x48" width="48" height="48"/>
         <image name="effect48x48" width="48" height="48"/>
         <image name="effect48x48.jpg" width="48" height="48"/>
-        <image name="save48x48" width="48" height="48"/>
+        <image name="save48x48.png" width="48" height="48"/>
     </resources>
 </document>
