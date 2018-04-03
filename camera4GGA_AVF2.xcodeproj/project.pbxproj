@@ -430,6 +430,7 @@
 			baseConfigurationReference = 78A2F2A15689DFA8D4B9487B /* Pods-camera4GGA_AVF2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HTSN853XWB;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -441,6 +442,8 @@
 				OTHER_SWIFT_FLAGS = "\"-D MYDEBUG\" \"COCOAPODS\"";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ctak.camera4GGA-AVF2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -558,12 +561,15 @@
 			baseConfigurationReference = 78A2F2A15689DFA8D4B9487B /* Pods-camera4GGA_AVF2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HTSN853XWB;
 				INFOPLIST_FILE = camera4GGA_AVF2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ctak.camera4GGA-AVF2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -574,12 +580,15 @@
 			baseConfigurationReference = 9428464B58ADD18D30C8366B /* Pods-camera4GGA_AVF2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HTSN853XWB;
 				INFOPLIST_FILE = camera4GGA_AVF2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ctak.camera4GGA-AVF2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
